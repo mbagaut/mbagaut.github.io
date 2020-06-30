@@ -1,0 +1,19 @@
+html {
+  height: 100%;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  max-width: 40%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: RGB(255, 255, 255)
+ 
+}
+
+.image {
+  width: 100%;
+  margin: 10px auto 10px;
+}
+
