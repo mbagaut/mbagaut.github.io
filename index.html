@@ -1,45 +1,83 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>Ключевые вехи сценария</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image" href="https://code.s3.yandex.net/web-code/rules-favicon.ico">
-</head>
-<body>
-  <header class="header">
-    <div class="overlay">
-      <h1 class="header-title">Ключевые вехи сценария</h1>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+  <head>
+    <!-- Заголовок страницы в браузере -->
+    <title>Портфолио</title>
+    <!-- Кодировка страницы -->
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone-no>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Подключаем CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.min.css" />
+    <link rel="stylesheet" href="css/custom.css"
+    <!-- Иконка -->
+    <link rel="icon" type="image" href="">
+    <!-- Адаптив -->
+    <!-- <meta name="robots" content="noindex, nofollow" /> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  </head>
+  <!-- Отображаемое тело страницы -->
+  <body>
+    <div class="wrapper">
+      <header>
+  <div class="container">
+    <!-- флекс контейнер для логотипа и меню-->
+    <div class="header__body">
+      <!-- флекс элемент для лого-->
+      <div class="header__column">
+        <!-- содержимое флекс элемента-->
+        <a href="" class="header__logo"><picture><source srcset="img/icons/logo.webp" type="image/webp"><img src="img/icons/logo.png" alt="" /></picture></a>
+      </div>
+      <div class="header__column menu-header">
+      <!-- флекс элемент для меню-->
+        <div class="menu-header__icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav class="menu-header__menu">
+          <ul class="menu-header__list">
+            <li> <a href="" class="menu-header__link">Home</a></li>
+            <li> <a href="" class="menu-header__link">Our history</a></li>
+            <li> <a href="" class="menu-header__link">Tree</a></li>
+            <li> <a href="" class="menu-header__link">Else</a></li>
+            <li> <a href="" class="menu-header__link menu-header__link--modfordoplogo">About us</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
-  </header>
-  <section class="content">
-    <div class="card">
-      <img class="card-image" src="https://images.unsplash.com/photo-1522409164712-f66b8c27f68e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80">
-      <h3 class="card-title">Экспозиция</h3>
-      <p class="card-text">Экспозиция напоминает миф о сотворении мира: даёт толчок всему, но ни на что особо не влияет. Бывает и так, что экспозиция перекликается с эпилогом или является эпизодом из середины книги.
-      </p>
+  </div>
+</header>
+      <div class="mainblock">
+    <div class="container">
+        <div class="mainblock__imageblock imageblock">
+            <div class="imageblock__title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, explicabo.</div>
+            <div class="imageblock__bg ibg greenbg"><picture><source srcset="img/mainblock/1.webp" type="image/webp"><img src="img/mainblock/1.jpg" alt=""></picture></div>
+        </div>
+        <div class="mainblock__bottomblock bottomblock">
+            <div class="bottomblock__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur cupiditate ipsa facere neque, ea totam dolorem unde corporis accusantium illum ullam itaque perspiciatis voluptates perferendis non harum commodi optio sequi reiciendis rem amet sit. Voluptas nostrum illum facere consectetur molestias. Ex quas deleniti dolorem cum quo minus unde, dolor molestias?</div>
+            <a href="" class="bottomblock__btn btn"><span>Lorem ipsum dolor sit.</span></a>
+        </div>
+        <header">
+            <p>Title</p>
+            <p>Subtitle</p>
+        </header>
+        <article class="main">
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>  
+        </article>
+        <aside aside class="aside aside-1">Aside 1</aside>
+        <aside class="aside aside-2">Aside 2</aside>
+        <footer class="footer">Footer</footer>
     </div>
-    <div class="card no-right-margin">
-      <img class="card-image" src="https://images.unsplash.com/photo-1517128076055-be58e94ba823?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80">
-      <h3 class="card-title">Завязка</h3>
-      <p class="card-text">На этом этапе проявляется конфликт: сперва пунктиром, а затем более явно и напряжённо. Конфликт – не всегда что-то плохое, это столкновение чего-то: точек зрения, образов жизни, людей. Любовь – тоже конфликт.
-      </p>
+</div>
+      
+      
     </div>
-    <div class="card">
-      <img class="card-image" src="https://pictures.s3.yandex.net/frontend-developer/free-course/card-3.jpg">
-      <h3 class="card-title">Развитие</h3>
-      <p class="card-text">Читатель втянут в происходящее, знает имена героев, понимает, в чём соль происходящего. Данный этап – самая весомая часть книги, когда писатель ведёт читателя в свой воображаемый мир.
-      </p>
-    </div>
-    <div class="card no-right-margin">
-      <img class="card-image" src="https://pictures.s3.yandex.net/frontend-developer/free-course/card-4.jpg">
-      <h3 class="card-title">Кульминация</h3>
-      <p class="card-text">Изюминка книги, высокий темп и острота действий. Важно чтобы читатель проглатывал страницы не в силах остановиться, именно эта часть сохранится в его памяти как послевкусие.
-      </p>
-    </div>
-  </section>
-  <footer class="footer">
-  <h4 class="footer-author">А я ничо, еще лет 50 и... Марат Б.</h4>
-  </footer>
+      
+      
+    <script src="js/script.min.js"></script>
   </body>
-  </html>
+</html>
